@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="31715" started-at="2019-09-07T21:01:22Z" finished-at="2019-09-07T21:01:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="31715" started-at="2019-09-07T21:01:22Z" finished-at="2019-09-07T21:01:54Z">
+      <class name="com.AdidasEcom.Testcase.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.AdidasEcom.Testcase.HomePageTest@6093dd95]" name="setUp" is-config="true" duration-ms="12193" started-at="2019-09-07T21:01:22Z" finished-at="2019-09-07T21:01:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logotest()[pri:0, instance:com.AdidasEcom.Testcase.HomePageTest@6093dd95]" name="logotest" duration-ms="725" started-at="2019-09-07T21:01:34Z" finished-at="2019-09-07T21:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logotest -->
+        <test-method status="PASS" signature="headmentest()[pri:2, instance:com.AdidasEcom.Testcase.HomePageTest@6093dd95]" name="headmentest" duration-ms="7711" started-at="2019-09-07T21:01:35Z" finished-at="2019-09-07T21:01:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headmentest -->
+        <test-method status="PASS" signature="headwomentest()[pri:3, instance:com.AdidasEcom.Testcase.HomePageTest@6093dd95]" name="headwomentest" duration-ms="1608" started-at="2019-09-07T21:01:43Z" finished-at="2019-09-07T21:01:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headwomentest -->
+        <test-method status="PASS" signature="headkidstest()[pri:4, instance:com.AdidasEcom.Testcase.HomePageTest@6093dd95]" name="headkidstest" duration-ms="4181" started-at="2019-09-07T21:01:44Z" finished-at="2019-09-07T21:01:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headkidstest -->
+        <test-method status="PASS" signature="headfittest()[pri:5, instance:com.AdidasEcom.Testcase.HomePageTest@6093dd95]" name="headfittest" duration-ms="3521" started-at="2019-09-07T21:01:49Z" finished-at="2019-09-07T21:01:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headfittest -->
+        <test-method status="PASS" signature="headClasstest()[pri:6, instance:com.AdidasEcom.Testcase.HomePageTest@6093dd95]" name="headClasstest" duration-ms="336" started-at="2019-09-07T21:01:52Z" finished-at="2019-09-07T21:01:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headClasstest -->
+        <test-method status="PASS" signature="headouttest()[pri:7, instance:com.AdidasEcom.Testcase.HomePageTest@6093dd95]" name="headouttest" duration-ms="323" started-at="2019-09-07T21:01:52Z" finished-at="2019-09-07T21:01:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headouttest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.AdidasEcom.Testcase.HomePageTest@6093dd95]" name="tearDown" is-config="true" duration-ms="996" started-at="2019-09-07T21:01:53Z" finished-at="2019-09-07T21:01:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.AdidasEcom.Testcase.HomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
