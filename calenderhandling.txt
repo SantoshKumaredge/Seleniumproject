@@ -1,0 +1,58 @@
+calender handling
+-----------
+
+url : -https://goo.gl/kNZ6Sr
+
+1 jan ,2feb,3mar,4apri ,5may,6june,7july,8aug,9sep,10oct,11nov,12dec
+
+
+senario ; - eg :current day - 9th sep 2019 (9th month)
+
+tc : -select 1st june 2019 , and 10th dec 2019
+
+
+1.select current date/month/year
+2.select previous date/month/year
+3.select future date/month/year
+
+
+logic :-
+select 1st june 2019 --------->3moths back
+, and 10th dec 2019 -------->3moth future
+
+
+cd:-]
+
+//year finding
+select y= new select(driver.findElement?(By.xpath("path of the caleder year dropdown"))
+
+y.selectByVisibleText(2019);
+
+for(int i=3; i>=1; i--) //for future month // i=3 future remaining month from current month ,i-- till end of the month 
+{
+       driver.findElement(By.xpath("path of > button").click(); //selecting > button from calender 
+	string m = driver.findElement(By.xpath("path of the month lable from the calender").getText();//valid expected month or not 
+	if(m.equals("Decemeber"))
+	{
+		driver.findElement(By.linkText("10")).click(); //selecting date form celander
+		break ; //once we found expected date no need loop shold continue.
+	}
+{
+
+
+//previus month and date
+
+for(int i=8; i>=1; i--) //for past month// i=8 previous remaining month from current month, i-- till end of the month 
+{
+       driver.findElement(By.xpath("path of < button").click(); //selecting < button from calender 
+	string m = driver.findElement(By.xpath("path of the month lable from the calender").getText();//valid expected month or not 
+	if(m.equals("Decemeber"))
+	{
+		driver.findElement(By.linkText("10")).click(); //selecting date form celander
+		break ; //once we found expected date no need loop shold continue.
+	}
+{
+
+
+
+
