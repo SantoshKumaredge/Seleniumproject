@@ -1,0 +1,63 @@
+Hadling web table code.
+-------------------------
+
+table structure 
+<table ....>
+<tbody>
+<tr>
+<th>.....</th>
+</tr>
+<tr>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+
+row count xpath r= html/body/table/tbody/tr
+column count xpath c= html/body/table/tbody/tr/th
+value from table v= html/body/table/tbody/tr["+i+"]/td["+j+"]
+
+-------------
+int r = driver.Findelements(By.xpath("r").size();
+system.out.println(r);
+int c =driver.Findelements(By.xpath("c").size();
+system.out.println(c);
+//all values in table
+
+for (int i = 2; i<= r; i++)
+{
+  for(int j = 1; j<= c; j++)
+  { 
+    
+	system.out.println(driver.Findelement(By.xpath("v").getText() +" " );
+	
+   }
+	system.out.println( );
+
+}
+
+}
+
+
+------------------------------
+2) requ............find no of pass studant . count the value from perticluar column.
+asume value present in column 5.
+
+int r = driver.Findelements(By.xpath("r").size();
+
+int statuscount = 0;
+
+for (int i = 1; i<=r; i++){
+
+String statsu = driver.findElement(By.xpath("html/body/table/tbody/tr["+i+"]/td[5]")).getText();
+
+if(statsu.equals("pass")) {
+
+	statuscount = statsu +1;
+	}
+}
+s.o.p("number of students pass : "+statuscount);
+}
+
+
+
