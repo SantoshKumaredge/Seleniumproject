@@ -1,0 +1,127 @@
+
+List of all commands in selenium.
+-------------------------------------
+
+Webdrivers commands
+-----------------
+get commands
+_____________________
+
+get()
+getPageSource()
+getTitle()
+getText()
+getCurrentUrl()
+getWindowHandles()
+
+browser commands
+__________________
+close()
+quite()
+
+wait commands
+__________________
+implicitwait
+explicitwait
+
+navigation commands
+______________________
+navigate.back()
+navigate.forword()
+navigate.to()
+navigate.refresh()
+
+switching commands
+________________________
+switchTo().frame()
+switchTo.alert()
+switchTo.defaultContent()
+switchTo.window()
+
+Conditional commands
+______________________
+isDisplayed()
+isEnabled()
+isSelected()
+
+
+Web Elements
+-------------------
+textbox/inputbox
+button
+link
+radio button
+check boxes
+dropdown /list box/combobox
+frame
+web table
+calender
+file upload
+download
+drag and drop
+
+Actions :-
+------------
+sendKey() --> textbox/inputbox
+click() -->btn , link , radio ,checkbox
+Select() --> dropdwon,list,combo
+
+
+work with web element URL;-  https://goo.gl/kNZ6Sr
+=---------------------------
+
+Handling ALL WebElements:-
+---------------------------------
+
+textbox--->driver.findElement(by.id(" ")).sendKey("value");
+
+dropdown -> WebElement dr = pdriver.findElement(by.id(""));
+	    Select drop = new Select(dr);//import selenium.support.ui
+	    drop.selectByIndex(2)
+			or
+	     drop.selectByValue("value")
+			or
+	     drop.selectByVisibleText("text value")
+
+	// methods on dropdown
+	drop.getOpetions() // display all options
+	drop.getOptions().size() //no of options available
+
+radio --> s.o.p(driver,findElement(by,id()).isSelected()); //to check is radio is selected or not
+		driver.findelement(by.id()).click(); //to select or deselet
+
+
+chekbox ---> driver.findelement(by.id()).click();
+
+textarea - > driver.findElement(by.id()).sendKeys();
+
+links --> driver.findelement(by.linkText()).click();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

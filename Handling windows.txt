@@ -1,0 +1,31 @@
+switching windows
+------------------------
+1.when we clicked any link or button , sometime the page is loaded in new window, so how we need to switch from parent windo to chaild windo.
+
+2. how to close any window , parent or chiled.
+
+
+using__> getWindowHandles() ----> handling windows , it return id/key value of a browser/window
+
+code:-
+------------
+1. driver.findelement(find fist windo locator);
+   driver.findeleemnt(find second windo locator);
+	
+ set <String> s = driver.getWindowHandles();
+
+ for( String i:s)
+ {
+ 	S.o.p(i);
+	String t = driver.switchTo().window(i).getText(); //switching to chiled window
+	S.o.p(t);
+
+	//2. closing windows
+	if(t.contains("title of page to close"))
+	{	
+		driver.close();
+	}
+	
+}
+}
+}

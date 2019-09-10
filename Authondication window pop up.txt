@@ -1,0 +1,13 @@
+Authondication window pop up
+-----------------------------
+sign windows
+
+use AutoIT or Sikuli or webdriver
+
+include username and password with url itself.
+
+url - http://the-inernet.herokuapp.com/basic_auth
+user - admin
+pass -admin
+
+driver.get("http://admin:admin@the-inernet.herokuapp.com/basic_auth");

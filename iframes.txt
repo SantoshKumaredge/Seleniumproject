@@ -1,0 +1,88 @@
+Handling iframes
+---------------------------
+what is frames
+how to create own frames
+
+what is frames;-
+
+An iframe(inline frame) is an HTML document embedded inside another HTML document on a website.
+
+The iframe HTML element is offten used to insert content from another source, such as an advertisement, into a web page.
+
+creating frames:-
+
+<iframe src="http----" width="400" height="400" name="selee">
+ <p>.......</p>
+</iframe>
+<iframe src="http----" width="400" height="400" name="selee">
+ <p>.......</p>
+</iframe>
+
+<iframe src="http----" width="400" height="400" name="selee">
+ <p>.......</p>
+</iframe>
+
+ 
+selenium provides 3 different ways to switch to frame
+1.using name or id
+2. using index
+3. using WebElement
+
+
+driver.get(url)
+fr=deiver.findelement(by(xpth));
+driver.switchTo().frame("id or name or fr"); // swaitch to frame
+and perfor other action on the frame and switch back to main frame
+
+driver.switchTo().defaultContent() ///parent frame or page
+
+
+
+count no frames ;-
+
+totalnoframesinapp = driver.findElement(by.tagName("iframe")).size()
+
+
+
+
+
+
+-----------------------------
+By Naveen
+----------------------------
+
+freecrm
+-------
+
+
+to identify a frame in page , right click on element -->This Frame --->frame source
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
