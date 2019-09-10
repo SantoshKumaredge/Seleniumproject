@@ -1,0 +1,38 @@
+How to Check Drop down options are sorted or not in selenium with Java
+
+----------------------------------
+1.select all the list item from the dropdown and store it as original list
+2. from original list assign to temp list , apply sorting on temp list and to sorted list to temp list
+
+selecting dropdown using Select class
+
+WebElement element = driver.findEleement(By.xpsth("elexpsth")); //path of dropdown list
+
+Select se = new Select(element);
+
+List originallist = new ArryList();
+
+List <WenElement> options = se.getOptions(); //get all the items from tje dropdown.
+
+for(WebElement e:options){  ///store all options into webelemeent e
+originallist.add(e.getText()); // add all options from e to originallist
+}
+system.out.prinln(originallist);
+
+List templist = new ArrayList();
+
+templist = originallist;
+
+s..p("befor sortimh lidt : " templist);
+
+Collections.sort(templist); // soting lsit using java collections
+
+s.o.p(afert sorting ",templist);
+
+if (originallist== templist){
+S.op("dropdown sorted"))
+}
+else{
+s.op("dropdown not sorted");
+}
+}
